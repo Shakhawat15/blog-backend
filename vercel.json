@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
+  ],
+  "env": {
+    "PORT": "8000",
+    "DATABASE": "mongodb+srv://shakhawat:shakhawat@cluster0.jc8eu0a.mongodb.net/block-site",
+    "JWT_SECRET": "asd8a7s6d545as7dsa56d6a7sd:sa5d4sa32s45d6s9acdgxyuh:s78d5s6fd8s6f"
+  }
+}
